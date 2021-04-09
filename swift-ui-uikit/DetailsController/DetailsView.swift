@@ -8,11 +8,6 @@
 import SwiftUI
 import Components
 
-class X: ObservableObject {
-    @State var val: Int = 5
-}
-
-
 struct DetailsView: View, ViewControllerView {
     
     @StateObject var viewModel: DetailsViewModel

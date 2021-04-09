@@ -16,8 +16,6 @@
 		E85394112612F8DA00795991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E853940F2612F8DA00795991 /* LaunchScreen.storyboard */; };
 		E853941C2612F98300795991 /* RootViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853941B2612F98300795991 /* RootViewControllerView.swift */; };
 		E853941F2612F9D100795991 /* RootViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853941E2612F9D100795991 /* RootViewControllerViewModel.swift */; };
-		E8EDACEA26135C960022605B /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EDACE926135C960022605B /* PlayButton.swift */; };
-		E8EDACEE261368320022605B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EDACED261368320022605B /* ImagePicker.swift */; };
 		E8FA8394261305790022B806 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA8393261305790022B806 /* DetailsController.swift */; };
 		E8FA8398261305840022B806 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA8397261305840022B806 /* DetailsView.swift */; };
 		E8FA839B261305AE0022B806 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA839A261305AE0022B806 /* DetailsViewModel.swift */; };
@@ -35,8 +33,6 @@
 		E85394122612F8DA00795991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E853941B2612F98300795991 /* RootViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerView.swift; sourceTree = "<group>"; };
 		E853941E2612F9D100795991 /* RootViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerViewModel.swift; sourceTree = "<group>"; };
-		E8EDACE926135C960022605B /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
-		E8EDACED261368320022605B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E8FA8393261305790022B806 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 		E8FA8397261305840022B806 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		E8FA839A261305AE0022B806 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
@@ -82,7 +78,6 @@
 		E85394032612F8D900795991 /* swift-ui-uikit */ = {
 			isa = PBXGroup;
 			children = (
-				E8EDACE826135C820022605B /* Test Views */,
 				E8FA83922613055F0022B806 /* DetailsController */,
 				E853941A2612F96300795991 /* ViewController */,
 				E85394042612F8D900795991 /* AppDelegate.swift */,
@@ -103,15 +98,6 @@
 				E853941E2612F9D100795991 /* RootViewControllerViewModel.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		E8EDACE826135C820022605B /* Test Views */ = {
-			isa = PBXGroup;
-			children = (
-				E8EDACE926135C960022605B /* PlayButton.swift */,
-				E8EDACED261368320022605B /* ImagePicker.swift */,
-			);
-			path = "Test Views";
 			sourceTree = "<group>";
 		};
 		E8FA83922613055F0022B806 /* DetailsController */ = {
@@ -197,13 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8FA8394261305790022B806 /* DetailsController.swift in Sources */,
-				E8EDACEA26135C960022605B /* PlayButton.swift in Sources */,
 				E85394092612F8D900795991 /* RootViewController.swift in Sources */,
 				E853941C2612F98300795991 /* RootViewControllerView.swift in Sources */,
 				E853941F2612F9D100795991 /* RootViewControllerViewModel.swift in Sources */,
 				E85394052612F8D900795991 /* AppDelegate.swift in Sources */,
 				E8FA8398261305840022B806 /* DetailsView.swift in Sources */,
-				E8EDACEE261368320022605B /* ImagePicker.swift in Sources */,
 				E85394072612F8D900795991 /* SceneDelegate.swift in Sources */,
 				E84A5025261300990030D6F5 /* RootCoordinator.swift in Sources */,
 				E8FA839B261305AE0022B806 /* DetailsViewModel.swift in Sources */,
