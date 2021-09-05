@@ -5,13 +5,12 @@
 //  Created by Mike on 30/03/2021.
 //
 
-import Components
 import UIKit
 
 final class RootCoordinator: Coordinator {
     
-    var child: [Coordinator] = []
-    weak var parent: Coordinator?
+    var childCoordinators: [Coordinator] = []
+    weak var parentCoordinator: Coordinator?
     
     let navigationController: UINavigationController
     
@@ -35,7 +34,7 @@ final class RootCoordinator: Coordinator {
         navigationController.viewControllers = [controller]
     }
     
-    func showDetails(from model: RootViewControllerViewModel.Item) {
+    func showDetails(from model: Item) {
         let viewModel = DetailsViewModel(title: model.title, description: model.description, baseCoordinator: self)
         let controller = DetailsController(viewModel: viewModel)
         navigationController.show(controller, sender: nil)

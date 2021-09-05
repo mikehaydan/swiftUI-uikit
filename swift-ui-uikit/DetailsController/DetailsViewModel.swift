@@ -6,26 +6,22 @@
 //
 
 import UIKit
-import Components
+import SwiftUI
 
-final class DetailsViewModel: BaseViewModel {
-    
-    var baseCoordinator: Coordinator {
-        return coordinator
-    }
-    
+final class DetailsViewModel: BaseViewModel, ObservableObject {
+
     let title: String
     let description: String
-    
-    private let coordinator: RootCoordinator
+
+    unowned let coordinator: RootCoordinator
 
     init(title: String, description: String, baseCoordinator: RootCoordinator) {
         self.title = title
         self.description = description
         self.coordinator = baseCoordinator
     }
-    
+
     func setup() {
-        
+        print("Setting up `DetailsViewModel`...")
     }
 }

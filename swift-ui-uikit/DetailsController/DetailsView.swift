@@ -6,16 +6,11 @@
 //
 
 import SwiftUI
-import Components
 
 struct DetailsView: View, ViewControllerView {
-    
-    @StateObject var viewModel: DetailsViewModel
-    
-    init(viewModel: StateObject<DetailsViewModel>) {
-        self._viewModel = viewModel
-    }
-    
+
+    @ObservedObject var viewModel: DetailsViewModel
+
     var body: some View {
         ScrollView {
             VStack {
@@ -29,13 +24,14 @@ struct DetailsView: View, ViewControllerView {
             .padding(.leading, 20)
             .padding(.trailing, 20)
         }
+        .background(Color.blue)
     }
 }
 
-//struct DetailsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailsView(viewModel: DetailsViewModel(title: "Title",
-//                                                description: "LOLOLO",
-//                                                baseCoordinator: RootCoordinator()))
-//    }
-//}
+struct DetailsView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailsView(viewModel: DetailsViewModel(title: "Title",
+                                                description: "Description",
+                                                baseCoordinator: RootCoordinator()))
+    }
+}
