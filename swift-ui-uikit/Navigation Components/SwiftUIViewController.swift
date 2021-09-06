@@ -81,6 +81,10 @@ class SwiftUIViewController<V: ViewControllerView>: UIViewController {
         childView = V(viewModel: viewModel)
 
         super.init(nibName: nil, bundle: nil)
+
+        if String(describing: type(of: self)) == String(describing: SwiftUIViewController.self) {
+            fatalError("`SwiftUIViewController` has to be inherited")
+        }
     }
 
     @available(*, unavailable)
